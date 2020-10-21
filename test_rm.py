@@ -25,10 +25,10 @@ class TestRemoveDups(unittest.TestCase):
         d4 = deque('abc')
         
         t1 = [d1,d3,d1,d3,d2,d4]
-        self.assertEqual(rm.remove_duplicates(l4), [d1,d3,d2])
+        self.assertEqual(rm.remove_duplicates(t1), [d1,d3,d2])
         
         t2 = [[1,2], [4,5], [2,3], [1,2], [3,4], [2,3]]
-        self.assertEqual(rm.remove_duplicates(l5), [[1, 2], [4, 5], [2, 3], [3, 4]])
+        self.assertEqual(rm.remove_duplicates(t2), [[1, 2], [4, 5], [2, 3], [3, 4]])
         
 
 if __name__ == '__main__':
